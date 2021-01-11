@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>TechQC</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <div class="head-left">
+                <a href="index.html">
+                <img src="images/logo.png" class="logo" alt="logo">
+                <div class="title">
+                    <h1>TechQC</h1>
+                    <p class="fo">
+                        There is pride in everyone's life. 
+                    </p>
+                </div>
+            </a>
+            </div>
+                <a href="javascript:void(0);" id="menu" onclick="fun()">
+                    <i class="fas fa-bars" id="nab"></i>
+                </a>
+            <div class="menu" id="dis">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html" style="color:black">Contact</a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="textarea-c">
+        <div class="contact">
+            <div class="comtact_bac">
+                    <h1>Contact Us</h1>
+                    <p>We are looking forward to help you in every possible way….
+                       <br> <br>We ask you to make use of the contact form below or reach us via social media</p>
+            </div>
+        </div>
+        <div class="form" >
+            <form class="gform" method="POST" class="pure-form pure-form-stacked"
+          action="https://script.google.com/macros/s/AKfycbwEX9L2okHWMPHq8mR55Lcuf4JU9APf6kKSvkNVc08LRf75803tCmtN/exec">
+                <h2>Connect with us...</h2>
+                <label>Name:</label><br>
+                <input type="text" name="name" placeholder="Nickname" required><br>
+                <label for="pronoun">Pronoun:</label>
+                <select id="pronoun" name="pronoun">
+                    <option value="he/him" >he/him</option>
+                    <option value="She/Her">She/Her</option>
+                    <option value="They/Them">They/Them</option>
+                    <option value="Others">Others</option>
+                </select><br>
+                <label>Others:</label><br>
+                <input type="text" name="others" placeholder="Others" ><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <label>Message:</label><br>
+                <textarea name="message" rows="4" placeholder="Message" required></textarea><br>
+                <!--<input type="submit" class="bu" value="SUBMIT">-->
+                <input type="submit" class="bu" value="SUBMIT">
+                <div class="thankyou_message">
+                    <p>Message Send</p> 
+                </div>
+            </form>
+        </div>
+        <div class="git">
+            <h1>Get In Touch</h1>
+            <h3>Reach Us</h3>
+            <a href="mailto:psgtechavalepa@gmail.com"><i class="fas fa-envelope ml-2"> </i>psgtechavalepa@gmail.com</a><br>
+            <a href="https://www.instagram.com/psgtechqc/"><i class="fab fa-instagram ml-2"> </i>TechQC</a><br>
+            <a href="https://www.facebook.com/queerpsgtech.queerpsgtech"><i class="fab fa-facebook ml-2"> </i>queerpsgtech</a>
+        </div>
+    </div>
+    <footer>
+        <div class="f-container">
+            <div class="fo-left">
+                <img src="images/logo.png" class="fo-logo" alt="logo">
+                <p class="name">TechQC</p>
+                <p class="fo">There is Pride In Everybody's Life</p>
+                <a href="mailto:psgtechavalepa@gmail.com"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.instagram.com/psgtechqc/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/queerpsgtech.queerpsgtech"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="fo-right">
+                <h1>Get In Touch</h1>
+                <a href="mailto:psgtechavalepa@gmail.com"><i class="fas fa-envelope"> psgtechavalepa@gmail.com</i></a><br>
+                <a href="https://www.instagram.com/psgtechqc/"><i class="fab fa-instagram ml"> TechQC</i></a><br>
+                <a href="https://www.facebook.com/queerpsgtech.queerpsgtech"><i class="fab fa-facebook"> queerpsgtech</i></a>
+            </div>
+            <div class="end">
+                <hr>
+                <p>Copyright &copy; 2021 TechQC</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false">
+        function fun()
+        {
+            var menu=document.getElementById("dis");
+            if(menu.style.display === "block")
+            {
+                menu.style.display = "none";
+            }
+            else{
+                menu.style.display = "block";
+            }
+        }
+    </script>
+    <script data-cfasync="false" type="text/javascript">
+      (function() {
+        function validEmail(email) {
+          var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+          return re.test(email);
+        }
+      
+        function validateHuman(honeypot) {
+          if (honeypot) {  //if hidden form filled up
+            console.log("Robot Detected!");
+            return true;
+          } else {
+            console.log("Welcome Human!");
+          }
+        }
+      
+        // get all data in form and return object
+        function getFormData(form) {
+          var elements = form.elements;
+      
+          var fields = Object.keys(elements).filter(function(k) {
+                return (elements[k].name !== "honeypot");
+          }).map(function(k) {
+            if(elements[k].name !== undefined) {
+              return elements[k].name;
+            // special case for Edge's html collection
+            }else if(elements[k].length > 0){
+              return elements[k].item(0).name;
+            }
+          }).filter(function(item, pos, self) {
+            return self.indexOf(item) == pos && item;
+          });
+      
+          var formData = {};
+          fields.forEach(function(name){
+            var element = elements[name];
+            
+            // singular form elements just have one value
+            formData[name] = element.value;
+      
+            // when our element has multiple items, get their values
+            if (element.length) {
+              var data = [];
+              for (var i = 0; i < element.length; i++) {
+                var item = element.item(i);
+                if (item.checked || item.selected) {
+                  data.push(item.value);
+                }
+              }
+              formData[name] = data.join(', ');
+            }
+          });
+      
+          // add form-specific values into the data
+          formData.formDataNameOrder = JSON.stringify(fields);
+          formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+          formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+      
+          console.log(formData);
+          return formData;
+        }
+      
+        function handleFormSubmit(event) {  // handles form submit without any jquery
+          event.preventDefault();           // we are submitting via xhr below
+          var form = event.target;
+          var data = getFormData(form);         // get the values submitted in the form
+      
+          /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+          if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+            return false;
+          }
+          */
+      
+          if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
+            var invalidEmail = form.querySelector(".email-invalid");
+            if (invalidEmail) {
+              invalidEmail.style.display = "block";
+              return false;
+            }
+          } else {
+            disableAllButtons(form);
+            var url = form.action;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            // xhr.withCredentials = true;
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                console.log(xhr.status, xhr.statusText);
+                console.log(xhr.responseText);
+                /*var formElements = form.querySelector(".form-elements")
+                if (formElements) {
+                  formElements.style.display = "none"; // hide form
+                }*/
+                var thankYouMessage = form.querySelector(".thankyou_message");
+                if (thankYouMessage) {
+                  thankYouMessage.style.display = "block";
+                }
+                return;
+            };
+            // url encode form data for sending as post data
+            var encoded = Object.keys(data).map(function(k) {
+                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+            }).join('&');
+            xhr.send(encoded);
+          }
+        }
+        
+        function loaded() {
+          console.log("Contact form submission handler loaded successfully.");
+          // bind to the submit event of our form
+          var forms = document.querySelectorAll("form.gform");
+          for (var i = 0; i < forms.length; i++) {
+            forms[i].addEventListener("submit", handleFormSubmit, false);
+          }
+        };
+        document.addEventListener("DOMContentLoaded", loaded, false);
+      
+        function disableAllButtons(form) {
+          var buttons = form.querySelectorAll("button");
+          for (var i = 0; i < buttons.length; i++) {
+            buttons[i].disabled = true;
+          }
+        }
+      })();
+      
+    </script>
+
+</body>
+</html>
