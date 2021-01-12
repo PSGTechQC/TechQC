@@ -132,7 +132,7 @@ header{
 }
 .le a{
     text-decoration: none;
-    padding:20px;
+    padding-left: 20px;
     color:rgba(25, 112, 241, 0.637);
     line-height:27px;
     font-size:20px;
@@ -322,7 +322,7 @@ header{
 .form h2{
     font-size: 1.2em;
 }
-#pronoun{
+#pronoun, #Pronoun{
     padding:5px 10px 5px 10px;
 }
 .thankyou_message{
@@ -339,25 +339,16 @@ footer{
     
     width: 100%;
     background: #242A56;
-    color:antiquewhite;
+    color:rgb(247, 244, 241);
     display: inline-block;
 }
 .fo-logo{
     height:120px;
-    margin:20px;
-    margin-right:0 ;
-    margin-bottom: 0;
-}
-.name{
-    margin-top:30px;
-    font-size:30px;
-    padding-left: 0;
-    float:right;
-    right: 0;
+    margin-top: 10px;
+    float:left;
 }
 footer p{
     font-weight:bold;
-    padding:20px;
 }
 footer a{
     padding-left: 0px;
@@ -376,12 +367,21 @@ footer a:hover{
 }
 .fo-right{
     float: right;
-    padding-right: 100px;
+    padding-right: 80px;
     padding-top: 20PX;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 .fo-right h1{
     font-size:36px;
+}
+.f_title{
+    float: right;
+    margin-top:50px;
+    margin-left:10px;
+}
+.f_title>p{
+    font-size: 20px;
 }
 .fo-right i{
     font-size:20px;
@@ -392,7 +392,7 @@ footer a:hover{
 }
 hr{
     width:60%;
-    margin:0 auto;
+    margin:10px auto;
 }
 .f-container{
     width:90%;
@@ -408,10 +408,27 @@ hr{
 /* Tab View */
 @media(max-width:1400px)
 {
+    .ic p , .ic li{
+        font-size:1.4em;
+    }
+    .ic .fs-16{
+        font-size:1.3em;
+    }
     .ic{
         width:30%;
         height:330px;
         margin:0 auto;
+    }
+}
+@media(max-width:1240px)
+{
+    .ic{
+        width:30%;
+        height:330px;
+        margin:0 auto;
+    }
+    .ic .fs-16{
+        font-size:1em;
     }
     .ab{
         background: url("images/logo.png");
@@ -421,7 +438,7 @@ hr{
         width:90%;
     }
     .ic p , .ic li{
-        font-size:1em;
+        font-size:1.1em;
     }
     .le h2{
         font-size:1.8em;
@@ -431,7 +448,7 @@ hr{
     }
 }
 /* MObile View */
-@media (max-width:800px)
+@media (max-width:830px)
 {
     /*About page main contant*/
     .title{
@@ -580,8 +597,24 @@ hr{
         width: 90%;
         margin:5 auto;
     }
+    .thankyou_message {
+        margin-top: 10px;
+        text-align: center;
+    }
     .fo-right{
-        padding-right: 85px;
+        justify-items: center;
+        padding-right:0;
+    }
+    .f-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .fo-left{
+        display:flex;
+    }
+    .f_title{
+        
+        justify-content:flex-start;
     }
     .fo-right h1 {
         font-size: 1.4em;
