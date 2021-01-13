@@ -46,7 +46,7 @@
             </div>
         </div>
         <div class="form" >
-            <form class="gform" method="POST" class="pure-form pure-form-stacked"
+            <form class="gform" id="form" method="POST" class="pure-form pure-form-stacked"
           action="https://script.google.com/macros/s/AKfycbwEX9L2okHWMPHq8mR55Lcuf4JU9APf6kKSvkNVc08LRf75803tCmtN/exec">
                 <h2>Connect with us...</h2>
                 <label>Name:</label><br>
@@ -221,6 +221,7 @@
                 if (thankYouMessage) {
                   thankYouMessage.style.display = "block";
                 }
+                document.getElementById("form").reset();
                 return;
             };
             // url encode form data for sending as post data
