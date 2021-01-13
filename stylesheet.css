@@ -168,7 +168,7 @@ header{
     font-weight: bold;
     line-height: 1;
 }
-/* Serveses Page Main Contant */
+/* HelpLine Page Main Contant */
 .services{
     background-image: url("images/sev_bac.jpg");
     background-size: cover;
@@ -230,6 +230,7 @@ header{
     padding:20px 0;
     text-align: center;
 }
+/* Help Page Content */
 .para1 ,.para2{
     width:80%;
     margin: 0 auto;
@@ -448,21 +449,7 @@ hr{
     }
 }
 /* MObile View */
-@media (max-width:830px)
-{
-    /*About page main contant*/
-    .title{
-        font-size:.8em;
-        padding-top: .9em;
-    }
-    .logo{
-        height:4em;
-        margin-top: .2em;
-    }
-    .container{
-        display:relative;
-        width:95%;
-    }
+@media (max-width:950px){
     #menu{
         float:right;       
         font-size:35px;
@@ -490,6 +477,22 @@ hr{
     }
     #dis{
         display:none;
+    }
+}
+@media (max-width:830px)
+{
+    /*About page main contant*/
+    .title{
+        font-size:.8em;
+        padding-top: .9em;
+    }
+    .logo{
+        height:4em;
+        margin-top: .2em;
+    }
+    .container{
+        display:relative;
+        width:95%;
     }
     /* Footer */
     fo-right{
