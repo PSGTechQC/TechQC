@@ -88,7 +88,7 @@ header{
     height:600px;
 }
 .down_i{
-    margin-top:50px;
+    margin-top:100px;
 }
 .card{
     display:flex;
@@ -481,6 +481,9 @@ hr{
 }
 @media (max-width:830px)
 {
+    body{
+        font-size: .8em;
+    }
     /*About page main contant*/
     .title{
         font-size:.8em;
@@ -501,9 +504,6 @@ hr{
         padding-top: 20PX;
         padding-right:0;
         font-size: 15px;
-    }
-    .fo-right h1{
-        font-size:30px;
     }
     /* About Main Area */
     .textarea{
@@ -532,6 +532,9 @@ hr{
         justify-content: none;
         flex-direction: column;  
     }
+    .bac p{
+        font-size:1em;
+    }
     .con{
         height:70em;
     }
@@ -547,7 +550,7 @@ hr{
     .le a{
         padding-left:0px;
         line-height: 1.3em;
-        font-size: 20px;
+        font-size: 1.2em;
     }
     .le li{
         margin-left:50px;
@@ -559,6 +562,9 @@ hr{
     .bac p{
         font-size:18px;
         width:90%;
+    }
+    .menu a{
+        font-size:1.4em;
     }
     /* Serveses Page Main Contant */
     .services_bac h1 ,.services_bac h3 ,.services_bac p{
@@ -616,13 +622,15 @@ hr{
         display:flex;
     }
     .f_title{
-        
         justify-content:flex-start;
     }
+    .f_title p{
+        font-size: 1.2em;
+    }
     .fo-right h1 {
-        font-size: 1.4em;
+        font-size: .9em;
     }
     .fo-right i{
-        font-size: .8em;
+        font-size: .7em;
     }
 }
