@@ -231,17 +231,22 @@ header{
     text-align: center;
 }
 /* Help Page Content */
-.para1 ,.para2{
+.para1 ,.para2 , .para3{
     width:80%;
     margin: 0 auto;
     display: flex;
 }
-.para1  img{
+.para1 img{
     float:left;
     height:500px;
     width:50%;
 }
-.para1 p{
+.para3 img{
+    float:left;
+    height:400px;
+    width:50%;
+}
+.para1 p , .para3 p{
     font-size:1.2rem;
     width:50%;
     display: inline-block;
@@ -583,22 +588,19 @@ hr{
         margin-top:10px;
         justify-items: none;
     }
-    .para1 , .para2{
-        display:block
+    .para1 , .para2 , .para3{
+        display:block;
     }
-    .para1 img{
+    .para1 img ,.para2 img ,.para3 img{
         width:100%;
         clear: both;
         height:300px;
     }
-    .para2 img{
-        width:100%;
-        height:300px;
-    }
-    .para1 p , .para2 p{
-        font-size:1em ;
+    .para1 p , .para2 p , .para3 p{
+        font-size:1em;
         width:100%;
         margin-bottom: 20px;
+        float:none;
     }
     /* Contact Form */
     .form{
