@@ -238,12 +238,12 @@ header{
 }
 .para1 img{
     float:left;
-    height:500px;
+    height:530px;
     width:50%;
 }
 .para3 img{
     float:left;
-    height:400px;
+    height:200px;
     width:50%;
 }
 .para1 p , .para3 p{
@@ -260,6 +260,9 @@ header{
     font-size:1.2rem;
     float:left;
     width: 50%;
+}
+.l_20{
+    margin-left:35px;
 }
 /* Contact page contant */
 .contact{
@@ -598,7 +601,10 @@ hr{
     .para1 img ,.para2 img ,.para3 img{
         width:100%;
         clear: both;
-        height:300px;
+        height:500px;
+    }
+    .para3 img {
+        height:270px;
     }
     .para1 p , .para2 p , .para3 p{
         font-size:1em;
@@ -645,5 +651,14 @@ hr{
     }
     .fo-right i{
         font-size: .7em;
+    }
+}
+@media (max-width: 500px)
+{
+    .para3 img{
+        height:100px;
+    }
+    .para2 img{
+        height:300px;
     }
 }
