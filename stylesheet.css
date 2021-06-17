@@ -230,6 +230,12 @@ header{
     padding:20px 0;
     text-align: center;
 }
+/* Pride Map */
+.map{
+    display:flex;
+    align-content:center;
+    flex-flow: column wrap;
+}
 /* Help Page Content */
 .para1 ,.para2 , .para3{
     width:80%;
