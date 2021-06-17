@@ -237,7 +237,7 @@ header{
     align-content:center;
     flex-flow: column wrap;
     margin: 0 auto;
-    height:6em;
+    height:90%;
     width:90%;
 }
 .head{
