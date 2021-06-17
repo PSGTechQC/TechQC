@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -235,6 +236,22 @@ header{
     display:flex;
     align-content:center;
     flex-flow: column wrap;
+    margin: 0 auto;
+    height:6em;
+    width:90%;
+}
+.head{
+    text-align:center;
+    font-size: .9em;
+}
+.head > h1 
+{
+    font-family: 'Playball', cursive;
+    font-size:2em;
+}
+h1>span{
+    font-family: 'Playball', cursive;
+    font-size:1.5em;
 }
 /* Help Page Content */
 .para1 ,.para2 , .para3{
@@ -467,7 +484,7 @@ hr{
     }
 }
 /* MObile View */
-@media (max-width:950px){
+@media (max-width:1090px){
     #menu{
         float:right;       
         font-size:35px;
@@ -661,6 +678,12 @@ hr{
 }
 @media (max-width: 500px)
 {
+    .head{
+        font-size:.9em;
+    }
+    .head>h1{
+        font-size:1.5em;
+    }
     .para3 img{
         height:100px;
     }
