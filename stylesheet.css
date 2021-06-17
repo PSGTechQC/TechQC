@@ -237,7 +237,7 @@ header{
     align-content:center;
     flex-flow: column wrap;
     margin: 0 auto;
-    height:90%;
+    height:60%;
     width:90%;
 }
 .head{
@@ -682,7 +682,7 @@ hr{
         font-size:.9em;
     }
     .head>h1{
-        font-size:1.5em;
+        font-size:2em;
     }
     .para3 img{
         height:100px;
